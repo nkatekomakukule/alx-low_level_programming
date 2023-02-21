@@ -2,14 +2,17 @@
 
 /**
  * print_alphabet - prints the alphabet in lowercase
+ * Retun: nothing on success
  */
 
 void print_alphabet(void)
 {
-	char la;
+	int start = 97, end = 122;
 
-	for (la = 'a'; la <= 'z'; la++)
-		_putchar(la);
-
+	while (start <= end)
+	{
+		_putchar(start);
+		start++;
+	}
 	_putchar('\n');
 }
